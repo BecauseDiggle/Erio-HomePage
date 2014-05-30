@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- To do List -->
+<!-- Add weather info -->
+<!-- Add Timed image-cycle -->
+<!-- Better color scheme -->
+
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	
+	<!-- internal styles -->
+	<style>
+	* {
+		margin: 0px;
+		padding: 0px;
+		}
+		
+	body {
+		font-family:"Segoe UI";
+		font-style: Segoe UI Light;
+		background-image:url('plaid-blue.png');
+		background-color: #ECFDFF;
+		color: #C2CAFF;
+		padding: 50px;
+		}
+		
+	h1 {
+		text-align: center;
+		width: 645px;
+		margin: 10% auto;
+		margin-bottom: 20px;
+		color: #c2caff;
+		font-size: 80px;
+		}
+		
+/* rules for navigation menu*/
+/* =========================*/
+	
+	ul#navmenu {
+		width: 645px;
+		margin: 0px auto;
+		margin-bottom: 38px;
+		}
+	
+	ul#navmenu, ul.sub1 {
+		list-style-type: none;
+		}
+	
+	ul#navmenu li {
+		width: 125px;
+		text-align: center;
+		position: relative;
+		float: left;
+		Margin-right: 4px;
+		}
+	
+	ul#navmenu a{
+		text-decoration: none;
+		display: block;
+		width: 129px;
+		height: 25x;
+		line-height: 26px;
+		border: 0px solid #ccc;
+		border-radius: 1px;
+		background-color: #fff;
+		}
+		
+	ul#navmenu .sub1 li {
+		}
+		
+	ul#navmenu .sub1 a {
+		marg-top: 5px;
+		}
+		
+	ul#navmenu li:hover > a {
+		background-color: #cfc;
+		}
+	ul#navmenu li:hover a:hover {
+		background-color: #ff0;
+		}
+		
+	ul#navmenu ul.sub1 {
+		display: none;
+		position: absolute;
+		top: 26px;
+		left: 0px;
+		}
+	
+	ul#navmenu li:hover .sub1 {
+		display: block;
+		transition-property: all;
+        transition-duration: 1.5s;
+        transition-timing-function: ease;
+		}
+		
+/* rules for Search Bar */
+/* ==================== */
+
+	.searchContainer {
+		text-align: right;
+		margin: 50px auto;
+		overflow: show;
+		width: 645px;
+		}
+
+	.searchForm {
+		display: inline;
+		width: 125px;
+		margin: 0px auto;
+		position: relative;
+		}
+
+	.searchBar::-webkit-input-placeholder {
+		transition: color 1s;
+		}
+
+	.searchBar {
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		font-size: 10px;
+		background-repeat: no-repeat;
+		background-size: 20px 20px;
+		background-position: right center;
+		border-width: 1px;
+		border-style: solid white;
+		outline: 0;
+		opacity: 0.5;
+		transition: all 1s;
+		}
+
+	.searchBar:hover {
+		cursor: pointer;
+		transition: all 0.5s;
+		background-position: right center;
+		opacity: 1;
+		}
+
+	.searchBar:focus {
+		cursor: text;
+		width: 100px;
+		padding: 0 25px 0 5px;
+		opacity: 1;
+		}
+	
+	
+	
+	.google {
+		background-image: url('google.png');
+		}
+ 
+	.youtube {
+		background-image: url('youtube.png');
+		}
+ 
+	.ExHentai {
+		background-image: url('ExHentai 2.png');
+		background-size: 21px 21px;
+		}
+	
+	</style>
+</head>
+<body>
+
+<h1>
+	<img src='Aliens 100.png'></img>
+</h1>
+
+<!-- Navigation Menu -->
+
+<ul id="navmenu">
+	<li><a href="#">4chan</a>
+		<ul class="sub1">
+			<li><a href="http://catalog.neet.tv/a/">/a/</a>
+			<li><a href="http://catalog.neet.tv/g/">/g/</a>
+			<li><a href="http://catalog.neet.tv/co/">/co/</a>
+			<li><a href="http://boards.4chan.org/d/catalog">/d/</a>
+		</ul>
+	</li>
+	<li><a href="#">Downloads</a>
+		<ul class="sub1">
+			<li><a href="http://coalgirls.wakku.to/">Coalgirls</a>
+			<li><a href="http://Nyaa.eu">Nyaa</a>
+			<li><a href="http://tokyotosho.info/">Tokyo Toshokan</a>
+			<li><a href="http://www.mediafire.com/?b4mhrfnyc6k6r">Comics</a>
+			<li><a href="https://www.mediafire.com/?6a6tgxa6o18vk#6a6tgxa6o18vk">Light Novels</a>
+		</ul></li>
+	<li><a href="#">Blogs</a></li>
+	<li><a href="#">Youtube</a></li>
+	<li><a href="#">Life</a></li>
+</ul>
+
+<!-- Search bar -->
+
+<section class="searchContainer">
+    <form class="searchForm" method="get" action="https://google.com/search">
+        <input class="searchBar google" type="text" name="q" placeholder="" />
+    </form>
+	<form class="searchForm" method="get" action="https://youtube.com/results">
+        <input class="searchBar youtube" type="text" name="search_query" placeholder="" />
+    </form>
+    <form class="searchForm" method="get" action="http://exhentai.org/">
+        <input class="searchBar ExHentai" type="text" name="f_search" placeholder="" />
+    </form>
+</section>
+
+
+</body>
+</html>
